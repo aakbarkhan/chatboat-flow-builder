@@ -1,0 +1,23 @@
+/* Global reset for consistent layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body font + disable scrollbars */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* ✅ prevents scrollbars on full-screen canvas */
+}
+
+/* Fullscreen React app */
+#root {
+  width: 100vw;
+  height: 100vh;
+}
